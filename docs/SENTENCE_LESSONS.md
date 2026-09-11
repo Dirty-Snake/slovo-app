@@ -306,7 +306,7 @@ npm run build
 
 ```powershell
 $env:LESSON_TEST_DATABASE_URL = 'postgres://test:test@localhost:5544/lessons_test'
-npm run test:lessons -w @learn-language/api
+npx nx run @learn-language/api:test:lessons
 ```
 
 Проверяются чистая миграция, откат с сохранением v1-слов, повторный импорт,
